@@ -1,0 +1,5 @@
+How To Implement Camera:
+
+First I need to figure out how to create a section which when clicked opens the camera and allows you to take pictures. I need to take this picture and send it to 
+firebase and then somehow process this image using the open AI vision model to classify the items in the images. IT then needs to feed this data to my program
+which willl then add this to the tally and items currently tracked
