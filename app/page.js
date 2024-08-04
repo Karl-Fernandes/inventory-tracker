@@ -65,7 +65,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between sm:p-24 p-4">
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm">
-        <h1 className="text-4xl p-4 text-center">Inventory Manager</h1>
+        <h1 className="text-4xl p-4 text-center">Pantry Tracker</h1>
         <div className="bg-slate-800 p-4 rounded-lg">
           <form className="grid grid-cols-6 gap-3 items-center text-black mb-4" onSubmit={addItem}>
             <input 
