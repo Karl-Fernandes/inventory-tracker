@@ -18,13 +18,13 @@ const Header = () => {
                 </div>
               </Link>
                )}
-            {!userId && (
-          <h1>
-          <div className="text-lg uppercase font-bold text-white">
-            Pantry App
-          </div>
-        </h1>
-        )}
+           {!userId && (
+            <Link href="/">
+            <div className="text-lg uppercase font-bold text-white">
+              Welcome Page
+            </div>
+            </Link>
+           )}
             </div>
             <div className="text-white flex items-center">
               {!userId && (

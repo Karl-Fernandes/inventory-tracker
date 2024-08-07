@@ -5,6 +5,7 @@ import { dark } from "@clerk/themes";
 import Header from "./components/Header";
 
 
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -24,7 +25,7 @@ export default function RootLayout({ children }) {
       <html lang="en">
         <body className={inter.className}>
           <Header />
-          
+          <dashboard />
           <main className="container mx-auto">
             <div className="flex items-start justify-center min-h-screen">
               <div className='mt-20'>
