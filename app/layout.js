@@ -9,7 +9,7 @@ import Header from "./components/Header";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Pantry Tracker",
+  title: "PantryAI",
   description: "Created by Karl Fernandes",
 };
 
