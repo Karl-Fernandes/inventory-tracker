@@ -4,6 +4,7 @@ import { collection, addDoc, getDocs, query, onSnapshot, doc, updateDoc, deleteD
 import { db } from './firebase';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus, faTrash } from '@fortawesome/free-solid-svg-icons';
+import RecipeGenerator from '../components/RecipeGenerator';
 
 export default function dashboard() {
   const [items, setItems] = useState([]);
@@ -63,7 +64,8 @@ export default function dashboard() {
   );
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between sm:p-24 p-4">
+    <main className="flex min-h-screen flex-row items-start justify-center p-4">
+      <div className="w-1/2 p-4">
         <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm">
           <h1 className="text-4xl p-4 text-center">Pantry Tracker</h1>
           <div className="bg-slate-800 p-4 rounded-lg">
@@ -116,6 +118,16 @@ export default function dashboard() {
             </ul>
           </div>
         </div>
+      </div>
+      <div className="w-1/2 p-4">
+        <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm">
+          <h1 className="text-4xl p-4 text-center">AI Recipe Generator</h1>
+          <div className="bg-slate-800 p-4 rounded-lg ">
+            {/* AI Recipe Generation Section */}
+            <p1 className="text-white">*AI still yet to be implemented* </p1>
+          </div>
+        </div>
+      </div>
     </main>
   );
 }

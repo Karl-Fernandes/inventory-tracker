@@ -14,7 +14,7 @@ const Header = () => {
             {userId && (
               <Link href="/dashboard">
                 <div className="text-lg uppercase font-bold text-white">
-                  PantryAI
+                  Home
                 </div>
               </Link>
                )}
