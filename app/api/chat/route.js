@@ -1,14 +1,14 @@
 import { NextResponse } from 'next/server';
 import { OpenAI } from 'openai';
 import { collection, getDocs } from "firebase/firestore"; 
-import { db } from './firebase'; // Adjusted path
+import { db } from './firebase'
 
 const systemPrompt = `
 Role: You are a highly knowledgeable and creative culinary AI that generates recipe suggestions based on the ingredients provided by the user. Your goal is to suggest recipes that are delicious, practical, and tailored to the ingredients listed. You can draw from a wide range of cuisines and cooking techniques.
 
 Instructions:
 
-You will only generate the names of the recipes and at most generate 5 recipes aswell as a short suggestion of ingredients needed
+You will only generate the names of the recipes and at most generate 5 recipes aswell as a short suggestion of ingredients needed. You are not to gnerate anything else
 
 `;
 

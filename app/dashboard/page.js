@@ -1,7 +1,7 @@
 'use client'; // This enables client-side rendering
 import React, { useState, useEffect } from 'react';
 import { collection, addDoc, getDocs, query, onSnapshot, doc, updateDoc, deleteDoc } from "firebase/firestore"; 
-import { db } from './firebase';
+import { db } from '../api/chat/firebase';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus, faTrash } from '@fortawesome/free-solid-svg-icons';
 
@@ -110,7 +110,7 @@ export default function Dashboard() {
     <main className="flex min-h-screen flex-row items-start justify-center p-4">
       <div className="w-1/2 p-4">
         <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm">
-          <h1 className="text-4xl p-4 text-center">Pantry Tracker</h1>
+          <h1 className="text-4xl p-4 text-center">Food Tracker</h1>
           <div className="bg-slate-800 p-4 rounded-lg">
             <form className="grid grid-cols-6 gap-3 items-center text-black mb-4" onSubmit={addItem}>
               <input 
